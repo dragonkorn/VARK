@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/vark/',
+  base: '/VARK/',
   plugins: [react(), tailwindcss()],
   test: {
     environment: 'node',

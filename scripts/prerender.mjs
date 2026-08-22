@@ -9,7 +9,7 @@
 import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises'
 
 const DIST = new URL('../dist/', import.meta.url)
-const SITE = 'https://dragonkorn.github.io/vark'
+const SITE = 'https://dragonkorn.github.io/VARK'
 const MODALITIES = ['V', 'A', 'R', 'K']
 
 const copy = JSON.parse(

@@ -54,14 +54,14 @@ function card({ set, heading, sub }) {
 const IMAGES = [
   ...MODALITIES.map((m) => ({
     file: `${m}.png`,
-    svg: card({ set: [m], heading: `${LABELS[m]} learner`, sub: 'dragonkorn.github.io/vark' }),
+    svg: card({ set: [m], heading: `${LABELS[m]} learner`, sub: 'dragonkorn.github.io/VARK' }),
   })),
   {
     file: 'multimodal.png',
     svg: card({
       set: MODALITIES,
       heading: 'Multimodal learner',
-      sub: 'dragonkorn.github.io/vark',
+      sub: 'dragonkorn.github.io/VARK',
     }),
   },
   {

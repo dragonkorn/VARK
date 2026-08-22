@@ -70,7 +70,7 @@ const ShareCard = forwardRef<HTMLDivElement, { set: Modality[] }>(function Share
       </div>
 
       <p style={{ margin: 0, fontSize: 26, color: 'rgba(0,0,0,0.4)' }}>
-        ทำแบบประเมินได้ที่ dragonkorn.github.io/vark
+        ทำแบบประเมินได้ที่ dragonkorn.github.io/VARK
       </p>
     </div>
   )

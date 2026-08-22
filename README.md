@@ -4,7 +4,7 @@ Single-page VARK learning-preference assessment in Thai, built for corporate L&D
 sessions. 16 workplace-scenario questions, multi-select, scored with the VARK
 stepping-distance rule. Static site, no backend, no data collection.
 
-Live: https://dragonkorn.github.io/vark
+Live: https://dragonkorn.github.io/VARK
 
 ## About the instrument
 
@@ -25,7 +25,7 @@ Vite · React 19 · TypeScript · Tailwind 4 · React Router · Vitest · html-t
 
 ```bash
 npm install
-npm run dev      # local dev at /vark/
+npm run dev      # local dev at /VARK/
 npm test         # scoring unit tests
 npm run build    # typecheck + build + prerender 15 result pages + 404.html
 npm run og       # regenerate the static OG images (needs sharp, run locally)

@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans Thai", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: oklch(0.51 0.19 275);
+  --color-brand-soft: oklch(0.96 0.02 275);
+  --color-v: oklch(0.72 0.16 70);
+  --color-a: oklch(0.66 0.12 190);
+  --color-r: oklch(0.55 0.17 275);
+  --color-k: oklch(0.65 0.18 15);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: oklch(0.98 0.005 275);
+  color: oklch(0.25 0.02 275);
+}

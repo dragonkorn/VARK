@@ -29,6 +29,7 @@ npm run dev      # local dev at /VARK/
 npm test         # scoring unit tests
 npm run build    # typecheck + build + prerender 15 result pages + 404.html
 npm run og       # regenerate the static OG images (needs sharp, run locally)
+npm run qr       # regenerate the QR code SVG after a URL change
 npm run preview  # serve the built site
 ```
 
@@ -42,6 +43,7 @@ npm run preview  # serve the built site
 | `src/lib/scoring.test.ts` | Unit tests, including that all 15 result keys are reachable |
 | `scripts/prerender.mjs` | Post-build: per-result HTML with OG tags, plus `404.html` |
 | `scripts/og.mjs` | Generates the 5 static OG images (committed to the repo) |
+| `scripts/qr.mjs` | Generates `public/qr.svg`, the QR code for the site URL |
 
 Notes:
 
@@ -49,6 +51,8 @@ Notes:
 - Results are shareable at `/result/:key`; the share button renders a 1080×1080
   PNG client-side and hands it to the native share sheet on mobile (LINE, etc.),
   falling back to a PNG download on desktop.
+- `/share` is a full-screen QR view for projecting in a training room; the same
+  QR also appears on the intro page and inside the generated share image.
 - Noto Sans Thai is self-hosted in `public/fonts` — the share-image capture
   inlines fonts, and a cross-origin font would render as tofu.
 

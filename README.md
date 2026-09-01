@@ -1,8 +1,8 @@
 # VARK — แบบประเมินสไตล์การเรียนรู้
 
-Single-page VARK learning-preference assessment in Thai, built for corporate L&D
-sessions. 16 workplace-scenario questions, multi-select, scored with the VARK
-stepping-distance rule. Static site, no backend, no data collection.
+Single-page VARK learning-preference assessment in Thai. 16 everyday-situation
+questions, multi-select, scored with the VARK stepping-distance rule. Static
+site, no backend, no data collection.
 
 Live: https://dragonkorn.github.io/VARK
 

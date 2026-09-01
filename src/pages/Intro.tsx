@@ -30,7 +30,7 @@ export default function Intro() {
       <p className="mt-4 text-black/70 leading-relaxed">
         แบบประเมินนี้ใช้กรอบแนวคิด VARK แบ่งช่องทางการรับข้อมูลออกเป็น 4 แบบ ได้แก่ Visual (ภาพ),
         Aural (การฟัง), Read/Write (อ่านและเขียน) และ Kinesthetic (การลงมือทำ)
-        คำถามทั้งหมดเป็นสถานการณ์ในที่ทำงานจริง
+        คำถามเป็นสถานการณ์ในชีวิตประจำวัน
       </p>
 
       <dl className="mt-8 grid grid-cols-3 gap-3 text-center">
@@ -77,7 +77,7 @@ export default function Intro() {
         <div className="text-center sm:text-left">
           <h2 className="text-sm font-semibold">ชวนคนอื่นมาทำด้วย</h2>
           <p className="mt-1 text-sm text-black/60">
-            ให้ผู้เข้าอบรมสแกนคิวอาร์โค้ดนี้เพื่อเปิดแบบประเมินบนมือถือของตัวเอง
+            ให้คนอื่นสแกนคิวอาร์โค้ดนี้เพื่อเปิดแบบประเมินบนมือถือของตัวเอง
           </p>
           <p className="mt-2 text-xs text-black/45">{SITE_URL}</p>
           <Link

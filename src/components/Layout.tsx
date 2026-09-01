@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       </header>
       <main className="mx-auto w-full max-w-3xl flex-1 px-5 py-8">{children}</main>
       <footer className="mx-auto w-full max-w-3xl px-5 py-6 text-xs text-black/40">
-        เครื่องมือประกอบการอบรมภายในองค์กร · ไม่มีการเก็บข้อมูลผู้ทำแบบประเมิน
+        ไม่มีการเก็บข้อมูลผู้ทำแบบประเมิน
       </footer>
     </div>
   )

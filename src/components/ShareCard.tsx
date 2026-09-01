@@ -1,5 +1,6 @@
 import { forwardRef } from 'react'
 import { MODALITY_BLOCKS, resultTitle } from '../data/results'
+import QrCode from './QrCode'
 import { MODALITIES, type Modality } from '../lib/types'
 
 export const SHARE_CARD_SIZE = 1080
@@ -69,9 +70,14 @@ const ShareCard = forwardRef<HTMLDivElement, { set: Modality[] }>(function Share
         </p>
       </div>
 
-      <p style={{ margin: 0, fontSize: 26, color: 'rgba(0,0,0,0.4)' }}>
-        ทำแบบประเมินได้ที่ dragonkorn.github.io/VARK
-      </p>
+      <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 32 }}>
+        <p style={{ margin: 0, fontSize: 26, color: 'rgba(0,0,0,0.4)', maxWidth: 620 }}>
+          สแกนเพื่อทำแบบประเมินของคุณเอง
+          <br />
+          dragonkorn.github.io/VARK
+        </p>
+        <QrCode size={150} />
+      </div>
     </div>
   )
 })

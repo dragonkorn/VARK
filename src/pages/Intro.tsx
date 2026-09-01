@@ -1,5 +1,6 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Layout from '../components/Layout'
+import QrCode, { SITE_URL } from '../components/QrCode'
 import { QUESTIONS } from '../data/questions'
 import { DISCLAIMER } from '../data/results'
 import { answeredCount } from '../lib/storage'
@@ -70,6 +71,23 @@ export default function Intro() {
           </button>
         )}
       </div>
+
+      <section className="mt-10 flex flex-col items-center gap-4 rounded-xl border border-black/5 bg-white p-5 sm:flex-row sm:items-center sm:gap-6">
+        <QrCode size={120} className="shrink-0" />
+        <div className="text-center sm:text-left">
+          <h2 className="text-sm font-semibold">ชวนคนอื่นมาทำด้วย</h2>
+          <p className="mt-1 text-sm text-black/60">
+            ให้ผู้เข้าอบรมสแกนคิวอาร์โค้ดนี้เพื่อเปิดแบบประเมินบนมือถือของตัวเอง
+          </p>
+          <p className="mt-2 text-xs text-black/45">{SITE_URL}</p>
+          <Link
+            to="/share"
+            className="mt-3 inline-block rounded-lg border border-brand px-4 py-2 text-sm font-semibold text-brand transition hover:bg-brand-soft"
+          >
+            แสดงเต็มจอสำหรับฉายขึ้นจอ
+          </Link>
+        </div>
+      </section>
 
       <p className="mt-10 text-xs leading-relaxed text-black/45">{DISCLAIMER}</p>
     </Layout>
